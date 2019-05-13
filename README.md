@@ -44,6 +44,4 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 <script type="text/javascript" src="resources/main.js"></script>
 <link href="resources/vis-network.min.css" rel="stylesheet" type="text/css"/>
 
-<body onload="drawNetwork()">
-	<div id="mynetwork"></div>
-</body>
+<div id="mynetwork"></div>
