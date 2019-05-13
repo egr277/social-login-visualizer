@@ -30,18 +30,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 
-<style>
-	#mynetwork {
-		width: 800px;
-		height: 800px;
-		border: 1px solid #444444;
-		background-color: #222222;
-	}
-</style>
-
-<script type="text/javascript" src="resources/vis.js"></script>
-<script type="text/javascript" src="resources/data.js"></script>
-<script type="text/javascript" src="resources/main.js"></script>
-<link href="resources/vis-network.min.css" rel="stylesheet" type="text/css"/>
-
-<div id="mynetwork"></div>
