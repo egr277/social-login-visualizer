@@ -16,8 +16,22 @@
   <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <style>
+    #mynetwork {
+      width: 800px;
+      height: 800px;
+      border: 1px solid #444444;
+      background-color: #222222;
+    }
+  </style>
+
+  <script type="text/javascript" src="resources/vis.js"></script>
+  <script type="text/javascript" src="resources/data.js"></script>
+  <script type="text/javascript" src="resources/main.js"></script>
+  <link href="resources/vis-network.min.css" rel="stylesheet" type="text/css"/>
+
 </head>
-<body>
+<body onload="drawNetwork()">
   <div id="header">
     <nav>
       <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
@@ -33,32 +47,16 @@
 
     <section>
       <div id="title">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h1>Social Login Visualizer</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         <hr>
         <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
         <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
       </div>
 
-      BOB
-      <style>
-        #mynetwork {
-          width: 800px;
-          height: 800px;
-          border: 1px solid #444444;
-          background-color: #222222;
-        }
-      </style>
-
-      <script type="text/javascript" src="resources/vis.js"></script>
-      <script type="text/javascript" src="resources/data.js"></script>
-      <script type="text/javascript" src="resources/main.js"></script>
-      <link href="resources/vis-network.min.css" rel="stylesheet" type="text/css"/>
-
       <div id="mynetwork"></div>
 
     </section>
-
   </div>
 </body>
 </html>
