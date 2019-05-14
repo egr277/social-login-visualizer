@@ -167,10 +167,10 @@ function draw(IDS, DATASET, container_id, numCore){
     var network = new vis.Network(container, data, options); 
 
     network.on("zoom",function(){ //while zooming 
-        if(network.getScale() <= 0.1 )//the limit you want to stop at
+        if(network.getScale() <= 0.2 )//the limit you want to stop at
         {
             network.moveTo({
-                scale: 0.1,
+                scale: 0.2,
             }); 
         } 
     });
