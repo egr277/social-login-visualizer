@@ -22,13 +22,13 @@ function drawChinaNetwork(){
     //Wechat,QQ,Weibo,Baidu,Github,LinkedIn,Taobao,Douban,Ren,Facebook,Google
 
     var IDS={
-        "WeChat": {id: 100000, color: "#3b5998", image:"resources/icons/wechat.png"}, 
-        "QQ": {id:200000, color: "#DB4437", image:"resources/icons/qq.png"}, 
+        "WeChat": {id: 100000, color: "#7bb32e", image:"resources/icons/wechat.png"}, 
+        "QQ": {id:200000, color: "#69B3E7", image:"resources/icons/qq.png"}, 
         "Baidu": {id:300000, color: "#A9F7FC", image:"resources/icons/baidu.png"}, 
-        "Taobao": {id:400000, color: "#b25ed6", image:"resources/icons/yahoo.png"}, 
-        "Douban": {id:500000, color: "#0077B5", image:"resources/icons/douban.png"}, 
-        "Renren": {id:600000, color: "#ff9900", image:"resources/icons/renren.jpg"},
-        "Weibo": {id:700000, color: "#ff9900", image:"resources/icons/weibo.png"}
+        "Taobao": {id:400000, color: "#ff4200", image:"resources/icons/taobao.png"}, 
+        "Douban": {id:500000, color: "#2e963d", image:"resources/icons/douban.png"}, 
+        "Renren": {id:600000, color: "#005baa", image:"resources/icons/renren.jpg"},
+        "Weibo": {id:700000, color: "#bb3e3e", image:"resources/icons/weibo.png"}
     };
     var container = 'china_network';
     draw(IDS, CHINA_DATA, container, 7);
@@ -167,10 +167,10 @@ function draw(IDS, DATASET, container_id, numCore){
     var network = new vis.Network(container, data, options); 
 
     network.on("zoom",function(){ //while zooming 
-        if(network.getScale() <= 0.1 )//the limit you want to stop at
+        if(network.getScale() <= 0.2 )//the limit you want to stop at
         {
             network.moveTo({
-                scale: 0.1,
+                scale: 0.2,
             }); 
         } 
     });
