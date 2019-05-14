@@ -164,11 +164,14 @@ function draw(IDS, DATASET, container_id, numCore){
         }
     };
     network = new vis.Network(container, data, options); 
+    var afterzoomlimit = {
+  scale: 0.5,
+  }
 
     network.on("zoom",function(){ //while zooming 
         if(network.getScale() <= 0.5 )//the limit you want to stop at
         {
-            network.moveTo(0.5); //set this limit so it stops zooming out here
+            network.moveTo(afterzoomlimit); //set this limit so it stops zooming out here
         } 
     });
 
