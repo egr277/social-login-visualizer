@@ -7,7 +7,7 @@ function drawNetworks(){
 
 function drawUSNetwork(){
     var IDS={
-        "Facebook": {id: 100000, color: "#3b5998", image:"resources/icons/facebook.png"}, 
+        "Facebook": {id: 100000, color: "#6a91e2", image:"resources/icons/facebook.png"}, 
         "Google": {id:200000, color: "#DB4437", image:"resources/icons/google.png"}, 
         "Twitter": {id:300000, color: "#A9F7FC", image:"resources/icons/twitter.png"}, 
         "Yahoo": {id:400000, color: "#b25ed6", image:"resources/icons/yahoo.png"}, 
