@@ -41,6 +41,7 @@ function draw(IDS, DATASET, container_id, numCore){
     var i =0;
     for(var login in IDS){
         var r = 300;
+        if(numCore == 7) r = 350;
         var coreX = r * Math.cos(i*2*Math.PI/numCore);
         var coreY = r * Math.sin(i*2*Math.PI/numCore);
         i++;
