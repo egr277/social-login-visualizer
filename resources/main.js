@@ -11,7 +11,7 @@ function drawUSNetwork(){
         "Google": {id:200000, color: "#DB4437", image:"resources/icons/google.png"}, 
         "Twitter": {id:300000, color: "#A9F7FC", image:"resources/icons/twitter.png"}, 
         "Yahoo": {id:400000, color: "#b25ed6", image:"resources/icons/yahoo.png"}, 
-        "LinkedIn": {id:500000, color: "#0077B5", image:"resources/icons/linkedin.png"}, 
+        "LinkedIn": {id:500000, color: "#368edb", image:"resources/icons/linkedin.png"}, 
         "Amazon": {id:600000, color: "#ff9900", image:"resources/icons/amazon.png"}
     };
     var container = 'us_network';
@@ -27,7 +27,7 @@ function drawChinaNetwork(){
         "Baidu": {id:300000, color: "#A9F7FC", image:"resources/icons/baidu.png"}, 
         "Taobao": {id:400000, color: "#ff4200", image:"resources/icons/taobao.png"}, 
         "Douban": {id:500000, color: "#2e963d", image:"resources/icons/douban.png"}, 
-        "Renren": {id:600000, color: "#005baa", image:"resources/icons/renren.jpg"},
+        "Renren": {id:600000, color: "#368edb", image:"resources/icons/renren.jpg"},
         "Weibo": {id:700000, color: "#bb3e3e", image:"resources/icons/weibo.png"}
     };
     var container = 'china_network';
